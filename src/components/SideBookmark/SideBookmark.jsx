@@ -1,22 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 
-const SideBookmark = ({ readTime }) => {
-  const [time, setTime] = useState(readTime);
-
-  const [breakTime, setBreakTime] = useState(0);
+const SideBookmark = () => {
+  const [time, setTime] = useState([]);
 
   useEffect(() => {
     const getReadTimeFromStorage = localStorage.getItem("readTime");
     setTime(getReadTimeFromStorage);
-    const getBreakTime = localStorage.getItem("breakTime");
-    setBreakTime(getBreakTime);
-  }, [readTime]);
-
-  const handleBreakTime = (bt) => {
-    localStorage.setItem("breakTime", bt);
-    setBreakTime(bt);
-  };
+  });
   const handleComplete = () => {
     toast("Wow so easy !");
   };

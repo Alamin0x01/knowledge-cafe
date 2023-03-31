@@ -1,8 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 const SingleCard = ({ blog, handleReadTime }) => {
+  // const { img, name, seller, ratings, price } = props.product;
+  // const handleAddToCart = props.handleAddToCart;
+
   return (
     <div className=" card text-center w-100 m-auto col-md-6">
       <div className=" w-50% m-auto">
@@ -29,10 +32,15 @@ const SingleCard = ({ blog, handleReadTime }) => {
         <div className="d-flex gap-2">
           <p>{blog.readTime} min read</p>
 
-          <FontAwesomeIcon icon={faShoppingCart} role="button" />
+          <FontAwesomeIcon
+            icon={faBookmark}
+            role="button"
+            size="2x"
+            onClick={() => handleAddToCart(props.product)}
+          />
         </div>
       </div>
-      {/* <h2 role="button">{blog.title}</h2> */}
+
       <figure>
         <blockquote class="blockquote">
           <p role="button" className="fs-3">
