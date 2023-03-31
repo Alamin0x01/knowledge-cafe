@@ -7,8 +7,8 @@ const SideBookmark = ({ readTime }) => {
   const [breakTime, setBreakTime] = useState(0);
 
   useEffect(() => {
-    const getWatchTimeFromStorage = localStorage.getItem("readTime");
-    setTime(getWatchTimeFromStorage);
+    const getReadTimeFromStorage = localStorage.getItem("readTime");
+    setTime(getReadTimeFromStorage);
     const getBreakTime = localStorage.getItem("breakTime");
     setBreakTime(getBreakTime);
   }, [readTime]);

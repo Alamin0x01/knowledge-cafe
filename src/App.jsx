@@ -11,17 +11,18 @@ import "react-toastify/dist/ReactToastify.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [watchTime, setWatchTime] = useState(0);
+  const [readTime, setReadTime] = useState(0);
 
-  const handleWatchTime = (time) => {
-    const previousWatchTime = JSON.parse(localStorage.getItem("watchTime"));
-    if (previousWatchTime) {
-      const sum = previousWatchTime + time;
-      localStorage.setItem("watchTime", sum);
-      setWatchTime(sum);
+  const handleReadTime = (time) => {
+    // console.log(time);
+    const previousReadTime = JSON.parse(localStorage.getItem("readTime"));
+    if (previousReadTime) {
+      const sum = previousReadTime + time;
+      localStorage.setItem("readTime", sum);
+      setReadTime(sum);
     } else {
-      localStorage.setItem("watchTime", time);
-      setWatchTime(time);
+      localStorage.setItem("readTime", time);
+      setReadTime(time);
     }
   };
   return (
@@ -31,10 +32,10 @@ function App() {
       </div>
       <div className="main row">
         <div className="home-container col-md-8">
-          <Home handleWatchTime={handleWatchTime}></Home>
+          <Home handleReadTime={handleReadTime}></Home>
         </div>
         <div className=" col-md-4 card">
-          <SideBookmark watchTime={watchTime}></SideBookmark>
+          <SideBookmark readTime={readTime}></SideBookmark>
         </div>
       </div>
 

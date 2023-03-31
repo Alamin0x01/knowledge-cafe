@@ -5,16 +5,28 @@ const Blogs = () => {
   return (
     <div>
       <div class="container" className="mt-5">
-        <h1>Frequently Asked Questions</h1>
+        <h1>Programming Hero- Question Answers</h1>
+
         <details>
-          <summary>How do I create accordion?</summary>
-          <div>
-            The tags <em>details</em> and <em>summary</em> have you covered.
+          <summary>How does useState work?</summary>
+          <div className="fs-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quas
+            quos perferendis nam aliquid hic! Sed aliquam necessitatibus
+            repudiandae, ea excepturi suscipit, doloribus ipsum expedita omnis
+            laboriosam voluptatum beatae deleniti! have you covered.
           </div>
-          <summary>How do I create accordion?</summary>
-          <div>
-            The tags <em>details</em> and <em>summary</em> have you covered.
-          </div>
+        </details>
+        <details>
+          <summary>Props vs state?</summary>
+          <div className="fs-6">The tags ffffffffffffffave you covered.</div>
+        </details>
+        <details>
+          <summary>Purpose of useEffect other than fetching data.</summary>
+          <div className="fs-6">The tags ffffffffffffffave you covered.</div>
+        </details>
+        <details>
+          <summary>How Does React work?</summary>
+          <div className="fs-6">The tags ffffffffffffffave you covered.</div>
         </details>
       </div>
     </div>
