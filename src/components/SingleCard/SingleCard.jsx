@@ -1,10 +1,16 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
+// import Blogs from "../Blogs/Blogs";
 
 const SingleCard = ({ blog, handleReadTime }) => {
-  // const { img, name, seller, ratings, price } = props.product;
-  // const handleAddToCart = props.handleAddToCart;
+  // console.log(blog);
+  // const [mark, setMark] = useState([]);
+  // const markAsRead = blog.markAsRead;
+  // const markAsRead = (Blogs) => {
+  //   const newMark = [...mark, blog];
+  //   setMark(newMark);
+  // };
 
   return (
     <div className=" card text-center w-100 m-auto col-md-6">
@@ -36,14 +42,15 @@ const SingleCard = ({ blog, handleReadTime }) => {
             icon={faBookmark}
             role="button"
             size="2x"
-            onClick={() => handleAddToCart(props.product)}
+            className="fa-solid"
+            onClick={() => markAsRead(blog)}
           />
         </div>
       </div>
 
       <figure>
         <blockquote class="blockquote">
-          <p role="button" className="fs-3">
+          <p role="button" className="fw-bold fs-4">
             {blog.title}
           </p>
         </blockquote>

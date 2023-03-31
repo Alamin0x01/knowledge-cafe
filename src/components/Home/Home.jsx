@@ -16,7 +16,12 @@ const Home = ({ handleReadTime }) => {
     <div>
       <div className="blog-container row ">
         {blogs.map((blog) => (
-          <SingleCard handleReadTime={handleReadTime} blog={blog}></SingleCard>
+          <SingleCard
+            handleReadTime={handleReadTime}
+            key={blog.id}
+            blog={blog}
+            // markAsRead={markAsRead}
+          ></SingleCard>
         ))}
       </div>
     </div>
