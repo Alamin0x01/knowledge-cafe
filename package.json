@@ -1,5 +1,5 @@
 {
-  "name": "b7a8-knowledge-cafe",
+  "name": "spa-with-localstorage",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,8 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "bootstrap": "^5.2.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-bootstrap": "^2.7.2",
+    "react-dom": "^18.2.0",
+    "react-toastify": "^9.1.2",
+    "sass": "^1.60.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
