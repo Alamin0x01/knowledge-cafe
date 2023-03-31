@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import BookmarkList from "../BookmarkList/BookmarkList";
 
 const SideBookmark = () => {
   const [time, setTime] = useState([]);
@@ -15,10 +14,16 @@ const SideBookmark = () => {
 
   return (
     <div>
-      <h4 className="text-primary p-3 border bg-danger bg-opacity-10">
+      <h4 className="text-primary p-3 border rounded bg-danger bg-opacity-10">
         Spent time on read : {time} min
       </h4>
-      <BookmarkList blog={time}></BookmarkList>
+
+      <div className="mt-5 p-3 border rounded bg-info bg-opacity-10">
+        <h4>Bookmarked Blogs : 8</h4>
+        <div>
+          <p className="mt-5 p-3 border rounded bg-white">hello</p>
+        </div>
+      </div>
     </div>
   );
 };

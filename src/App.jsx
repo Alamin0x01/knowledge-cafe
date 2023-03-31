@@ -1,7 +1,5 @@
 import { useState } from "react";
-
 import "./App.css";
-
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import SideBookmark from "./components/SideBookmark/SideBookmark";
@@ -11,7 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [readTime, setReadTime] = useState(0);
+  const [readTime, setReadTime] = useState([]);
 
   const handleReadTime = (time) => {
     // console.log(time);
