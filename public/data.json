@@ -1,21 +1,21 @@
 [
   {
     "id": "1",
-    "name": "Mr Al amin",
-    "picture": "https://avatars.githubusercontent.com/u/498852?v=4",
+    "name": "Nasim Ahmed",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpRfpo86SB6nHTlhI0FZFHPbdDb-y_QKJuvx6ugVdIEn1chvgrONhKsaG_spVs9sxjv84&usqp=CAU",
     "readTime": 10,
     "title": "Groundbreaking research reveals potential of gene editing technology for curing genetic diseases...",
     "poster": "https://images.unsplash.com/photo-1456324463128-7ff6903988d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MjB8MjMyODEyfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    "date": "Jan 10 (2 Days ago)"
+    "date": "2 month ago"
   },
   {
     "id": "2",
     "name": "Nerob ahmed",
-    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpRfpo86SB6nHTlhI0FZFHPbdDb-y_QKJuvx6ugVdIEn1chvgrONhKsaG_spVs9sxjv84&usqp=CAU",
+    "picture": "https://avatars.githubusercontent.com/u/498852?v=4",
     "readTime": 15,
     "title": "New study finds link between social media use and increased feelings of loneliness...",
     "poster": "https://images.unsplash.com/photo-1448932155749-638e51b56f03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTZ8MjMyODEyfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    "date": "Jan 10 (4 Days ago)"
+    "date": "3 month ago"
   },
   {
     "id": "3",
@@ -24,7 +24,7 @@
     "readTime": 12,
     "title": "Survey shows that remote work has become the new normal for tech industry during the pandemic...",
     "poster": "https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MnwyMzI4MTJ8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-    "date": "Jan 10 (6 Days ago)"
+    "date": "5 month ago"
   },
   {
     "id": "4",
@@ -33,6 +33,6 @@
     "readTime": 16,
     "title": "Emerging blockchain technology poised to revolutionize the way businesses operate..",
     "poster": "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8N3wyMzI4MTJ8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-    "date": "Jan 10 (10 Days ago)"
+    "date": "7 month ago"
   }
 ]

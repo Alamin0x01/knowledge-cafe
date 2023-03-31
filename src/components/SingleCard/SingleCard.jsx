@@ -1,16 +1,22 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
+import { ToastContainer, toast } from "react-toastify";
+
 // import Blogs from "../Blogs/Blogs";
 
 const SingleCard = ({ blog, handleReadTime }) => {
-  // console.log(blog);
+  // console.log(blogs);
   // const [mark, setMark] = useState([]);
   // const markAsRead = blog.markAsRead;
   // const markAsRead = (Blogs) => {
   //   const newMark = [...mark, blog];
   //   setMark(newMark);
   // };
+
+  const handleReadTimey = () => {
+    toast("Wow so easy !");
+  };
 
   return (
     <div className=" card text-center w-100 m-auto col-md-6">
@@ -30,9 +36,14 @@ const SingleCard = ({ blog, handleReadTime }) => {
               alt=""
             />
           </div>
-          <div className="p-0">
-            <p className="fw-bold">{blog.name}</p>
-            <p>{blog.date}</p>
+          <div>
+            <p className="p-1">
+              <strong>{blog.name}</strong>
+              <br />
+
+              {blog.date}
+            </p>
+            {/* <p>{blog.date}</p> */}
           </div>
         </div>
         <div className="d-flex gap-2">
@@ -49,13 +60,16 @@ const SingleCard = ({ blog, handleReadTime }) => {
       </div>
 
       <figure>
-        <blockquote class="blockquote">
-          <p role="button" className="fw-bold fs-4">
+        <blockquote className="blockquote">
+          <a
+            role="button"
+            className="fw-bold fs-4 text-start text-decoration-none text-primary-emphasis"
+          >
             {blog.title}
-          </p>
+          </a>
         </blockquote>
-        <figcaption class="blockquote-footer">
-          #technology <cite title="Source Title">#programming</cite>
+        <figcaption className="blockquote-footer">
+          #technology #programming
         </figcaption>
       </figure>
       <a
