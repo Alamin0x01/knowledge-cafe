@@ -1,23 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
-import { ToastContainer, toast } from "react-toastify";
-
-// import Blogs from "../Blogs/Blogs";
-
+import { toast } from "react-toastify";
 const SingleCard = ({ blog, handleReadTime }) => {
-  // console.log(blogs);
-  // const [mark, setMark] = useState([]);
-  // const markAsRead = blog.markAsRead;
-  // const markAsRead = (Blogs) => {
-  //   const newMark = [...mark, blog];
-  //   setMark(newMark);
-  // };
-
-  const handleReadTimey = () => {
-    toast("Wow so easy !");
+  const handleComplete = () => {
+    toast("Bookmark added !");
   };
-
   return (
     <div className=" card text-center w-100 m-auto col-md-6">
       <div className=" w-50% m-auto">
@@ -43,7 +31,6 @@ const SingleCard = ({ blog, handleReadTime }) => {
 
               {blog.date}
             </p>
-            {/* <p>{blog.date}</p> */}
           </div>
         </div>
         <div className="d-flex gap-2">
@@ -54,7 +41,7 @@ const SingleCard = ({ blog, handleReadTime }) => {
             role="button"
             size="2x"
             className="fa-solid"
-            onClick={() => markAsRead(blog)}
+            onClick={handleComplete}
           />
         </div>
       </div>

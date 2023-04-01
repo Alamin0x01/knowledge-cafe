@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import SideBookmark from "./components/SideBookmark/SideBookmark";
 import Blogs from "./components/Blogs/Blogs";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -12,7 +12,6 @@ function App() {
   const [readTime, setReadTime] = useState([]);
 
   const handleReadTime = (time) => {
-    // console.log(time);
     const previousReadTime = JSON.parse(localStorage.getItem("readTime"));
     if (previousReadTime) {
       const sum = previousReadTime + time;

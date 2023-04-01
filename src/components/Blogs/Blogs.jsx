@@ -4,12 +4,12 @@ import "./Blogs.css";
 const Blogs = () => {
   return (
     <div>
-      <div class="container" className="mt-5">
+      <div className="mt-5">
         <h1>Programming Hero- Question Answers</h1>
 
         <details>
           <summary>How does useState work?</summary>
-          <div className="fs-6">
+          <div className="fs-6 ">
             useState is a Hook that allows you to add state to your functional
             components.functional components didn't have a built-in way to
             manage state, and they were limited to just rendering UI based on
