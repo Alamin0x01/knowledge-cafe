@@ -9,7 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [readTime, setReadTime] = useState([]);
+  const [readTime, setReadTime] = useState(0);
 
   const handleReadTime = (time) => {
     const previousReadTime = JSON.parse(localStorage.getItem("readTime"));

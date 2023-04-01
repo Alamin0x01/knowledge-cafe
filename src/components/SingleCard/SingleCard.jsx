@@ -4,7 +4,7 @@ import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import { toast } from "react-toastify";
 const SingleCard = ({ blog, handleReadTime }) => {
   const handleComplete = () => {
-    toast("Bookmark added !");
+    toast("Bookmark already added !");
   };
   return (
     <div className=" card text-center w-100 m-auto col-md-6">
